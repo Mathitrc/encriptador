@@ -1,0 +1,115 @@
+* {
+    background: #f3f5fc;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 15%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text_area {
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 20px;
+    border: none;
+    color: #0a3871;
+    text-transform: lowercase;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+::placeholder {
+    color: #0a3871;
+}
+
+.text_area:focus, .mensaje:focus {
+    outline: none;
+}
+
+.informacion {
+    color: #0a3871;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 18px;
+}
+
+.btn_encriptar, .btn_desencriptar, .btn_copiar {
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    width: 48%;
+    text-align: center;
+}
+
+.btn_desencriptar {
+    background: #d8dfe8;
+    color: #0a3871;
+}
+
+.mensaje {
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 20px;
+    background: white url(/imagenes/Muñeco.png) no-repeat center center;
+    background-size: contain;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn_copiar {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #d8dfe8;
+    color: #0a3871;
+}
+
+@media (max-width: 600px) {
+    .text_area, .mensaje, .button, .btn_copiar {
+        width: 100%;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .btn_encriptar, .btn_desencriptar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
